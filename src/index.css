@@ -109,3 +109,9 @@
     margin-bottom: 3vh;
   }
 }
+
+@media (max-height: 600px) {
+  .subscribe-title{
+    font-size: 38px;
+  }
+}
