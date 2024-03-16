@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 import videoBg from './assets/coming_soon_compressed.mp4'
+import SubscribePopupModal from './components/SubscribePopupModal'  
 
 function App() {
-
+  const [openSubscribeModal, setOpenSubscribeModal] = useState(false);
   return (
     <>
       <div className="main-container">
@@ -25,7 +26,10 @@ function App() {
             </div>
             <div className="subscribe-now-txt">SUBSCRIBE NOW</div>
             <div className="subscribe-btn-container">
-              <button>SUBSCRIBE</button>
+              <button onClick={()=>{
+                setOpenSubscribeModal(true);
+              }}>SUBSCRIBE</button>
+              {openSubscribeModal && (<SubscribePopupModal openSubscribeModal={openSubscribeModal} setOpenSubscribeModal={setOpenSubscribeModal} />)}
             </div>
           </div>
           </div>
