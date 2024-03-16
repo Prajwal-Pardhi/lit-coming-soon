@@ -8,14 +8,14 @@ function App() {
   return (
     <>
       <div className="main-container">
-        <video className='bg-video' src={videoBg} autoPlay loop muted />
+        <video className='bg-video' src={videoBg} effect={blur} autoPlay loop muted />
         <div className="logo-img">
-            <img src="logo_lit.png" alt="alt" />
+            <img src="logo_lit.png" alt="alt" effect={blur} />
           </div>
         <div className="content">
           <div className="coming-soon-img-title">
             <div className="company-title">LUXURY IN TASTE</div>
-            <div className="coming-soon-img"><img src="coming_soon_img.png" alt="coming soon" /></div>
+            <div className="coming-soon-img"><img src="coming_soon_img.png" alt="coming soon" effect={blur} /></div>
           </div>
           <div>
           <div className="subscribe-content">
