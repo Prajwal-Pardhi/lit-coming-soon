@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import videoBg from './assets/coming_soon_compressed.mp4'
 
@@ -30,9 +28,6 @@ function App() {
               <button>SUBSCRIBE</button>
             </div>
           </div>
-          {/* <div className="logo-img">
-            <img src="logo_lit.png" alt="alt" />
-          </div> */}
           </div>
         </div>
        
