@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import videoBg from './assets/coming_soon_bg_vid2.mp4'
+import videoBg from './assets/coming_soon_compressed.mp4'
 
 function App() {
 
