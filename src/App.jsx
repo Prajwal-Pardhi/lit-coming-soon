@@ -26,7 +26,7 @@ function App() {
             </div>
             <div className="subscribe-now-txt">SUBSCRIBE NOW</div>
             <div className="subscribe-btn-container">
-              <button onClick={()=>{
+              <button className='subscribe-btn' onClick={()=>{
                 setOpenSubscribeModal(true);
               }}>SUBSCRIBE</button>
               {openSubscribeModal && (<SubscribePopupModal openSubscribeModal={openSubscribeModal} setOpenSubscribeModal={setOpenSubscribeModal} />)}

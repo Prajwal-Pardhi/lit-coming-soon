@@ -68,14 +68,14 @@
 .subscribe-btn-container{
   margin-top: 20px;
 }
-.subscribe-btn-container button{
+.subscribe-btn{
   padding: 10px 20px 10px 20px;
   border-radius: 20px;
   font-weight: bold;
   background-color: #FCF2DD;
   cursor: pointer;
 }
-.subscribe-btn-container button:hover{
+.subscribe-btn:hover{
   transform: scale(1.1);
 }
 .logo-img{
