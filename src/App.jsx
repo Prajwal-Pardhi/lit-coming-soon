@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import videoBg from "./assets/coming_soon_compressed_2.mp4";
+import videoBgMobile from "./assets/bg_vid_mobile_compressed.mp4";
 import SubscribePopupModal from "./components/SubscribePopupModal";
 import comingSoonGIF from "./assets/coming_soon_gif_without_bg.gif";
 import lightDecoGIF from "./assets/light_deco_gif.gif";
@@ -13,6 +14,14 @@ function App() {
         <video
           className="bg-video"
           src={videoBg}
+          effect={blur}
+          autoPlay
+          loop
+          muted
+        />
+        <video
+          className="bg-video-mobile"
+          src={videoBgMobile}
           effect={blur}
           autoPlay
           loop
