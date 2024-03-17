@@ -28,7 +28,7 @@ export const Modal = ({ openSubscribeModal, setOpenSubscribeModal }) => {
     } else {
       setError(false);
       subscribeLetter();
-      // Send the email------------------------------------------------
+      // Send the email- backend ------------------------------------------------
       setEmailSend(true);
       setTimeout(() => {
         setOpenSubscribeModal(false);
