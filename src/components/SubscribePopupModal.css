@@ -51,6 +51,7 @@
     outline: 0;
     margin: 0 auto;
     padding-right: 10px;
+    font-family: system-ui;
   }
   
   .right-form-container {
@@ -122,7 +123,10 @@
     display: flex;
     align-items: stretch;
   }
-  
+  .modal-text p{
+    font-size: 16px;
+    margin-top: 10px;
+  }
   .modal-buttons-container {
     display: flex;
     gap: 20px;
