@@ -55,7 +55,7 @@
   }
   
   .right-form-container {
-    margin-left: 20px;
+    margin-left: 22px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -124,8 +124,8 @@
     align-items: stretch;
   }
   .modal-text p{
-    font-size: 16px;
-    margin-top: 10px;
+    font-size: 18px;
+    /* margin-top: 10px; */
   }
   .modal-buttons-container {
     display: flex;
@@ -145,16 +145,16 @@
     padding: 8px 30px;
     font-weight: bold;
     border-radius: 15px;
+    border: none;
   }
   .right-form-title{
-    font-size: 25px;
+    font-size: 26px;
     font-weight: bold;
-    
+    font-family: system-ui;
   }
   .modal-email-sent-text p{
     margin-top: 20px;
     font-size: large;
-     
   }
   
   @media screen and (max-width: 600px) {

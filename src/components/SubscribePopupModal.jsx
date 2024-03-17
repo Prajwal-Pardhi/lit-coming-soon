@@ -8,9 +8,19 @@ export const Modal = ({ openSubscribeModal, setOpenSubscribeModal }) => {
   //   const [input, setInput] = useState("");
   const [emailSend, setEmailSend] = useState(false);
   const [email, setEmail] = useState("");
-  // const [name, setName] = useState("");
-  // const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
+
+  const subscribeLetter = async ()=>{
+    const response = await fetch('http://localhost:5000/api/subscribe', {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({email}),
+    })
+    const data = await response.json();
+    console.log(data);
+  }
 
   const sendEmail = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -18,6 +28,7 @@ export const Modal = ({ openSubscribeModal, setOpenSubscribeModal }) => {
       setError(true);
     } else {
       setError(false);
+      subscribeLetter();
       // Send the email------------------------------------------------
       setEmailSend(true);
       setTimeout(() => {
@@ -46,9 +57,9 @@ export const Modal = ({ openSubscribeModal, setOpenSubscribeModal }) => {
                 <p className="right-form-title">Subscribe to our newsletter</p>
                 <div>
                   <div className="modal-text">
-                    <p>Missing out on the latest fashion trends?!</p>
-                    <p>Subscribe to our weekly newsletter to receive concise weekly updates on Fast Fashion, Luxury Fashion, Sustainable Fashion, and the Sneaker Market.</p>
-                    <p>Subscribe now to stay stylishly ahead!</p>
+                    <p>Missing out on the latest fashion trends?!
+                    Subscribe to our weekly newsletter to receive concise weekly updates on Fast Fashion, Luxury Fashion, Sustainable Fashion, and the Sneaker Market.
+                    Subscribe now to stay stylishly ahead!</p>
                   </div>
                 </div>
                 <div>

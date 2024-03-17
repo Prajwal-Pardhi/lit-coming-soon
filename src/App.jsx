@@ -33,7 +33,7 @@ function App() {
         <div className="content">
           <div className="coming-soon-img-title">
             <div className="top-content-container">
-              <div className="company-title">LUXURY IN TASTE</div>
+              <div className="company-title marcellus-regular">LUXURY IN TASTE</div>
               <div className="coming-soon-img">
                 <img src={comingSoonGIF} alt="coming soon" effect={blur} />
               </div>

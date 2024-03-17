@@ -13,6 +13,13 @@
     color: #FCF2DD;
   }
 }
+.marcellus-regular {
+  font-family: "Marcellus", serif;
+  /* font-weight: 400; */
+  font-style: normal;
+  color: white;
+}
+
 body {
   background-color: #FCF2DD;
   color: #FCF2DD;
@@ -76,8 +83,9 @@ body {
   font-size: 20px;
   color: #FCF3DD;
   letter-spacing: 5px;
-  margin-top: 5vh;
+  margin-top: 4.5vh;
   font-weight: bold;
+  letter-spacing: 6px;
 }
 .coming-soon-img{
   width: 40vw; /* Adjust to your desired width */
@@ -122,8 +130,9 @@ body {
   padding: 10px 20px 10px 20px;
   border-radius: 20px;
   font-weight: bold;
-  background-color: #FCF2DD;
+  background-color: #d3d3d3;
   cursor: pointer;
+  border: none;
 }
 .subscribe-btn:hover{
   transform: scale(1.1);
@@ -167,7 +176,7 @@ body {
   }
   .options-container{
     display: flex;
-    margin-top: 13vh;
+    margin-top: 14vh;
     /* flex-direction: column; */
   }
   .coming-soon-img{
@@ -185,7 +194,7 @@ body {
     margin-bottom: 25vh;
   }
   .subscribe-title{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
   }.subscribe-btn{
     padding: 4px 8px 4px 8px;
@@ -196,11 +205,13 @@ body {
   }
   .subscribe-now-txt{
     color: #FCF3DD;
-    font-size: 15px;
+    font-size: 10px;
     margin-top: 5px;
+    letter-spacing: 3px;
   }
   .company-title{
-    font-size: 10px;
+    font-size: 15px;
+
   }
   .top-content-container{
     margin-top: 31vh;
