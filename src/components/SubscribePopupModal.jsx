@@ -8,13 +8,13 @@ export const Modal = ({ openSubscribeModal, setOpenSubscribeModal }) => {
   //   const [input, setInput] = useState("");
   const [emailSend, setEmailSend] = useState(false);
   const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [password, setPassword] = useState("");
+  // const [name, setName] = useState("");
+  // const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
 
   const sendEmail = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!name || !password || !email || !emailRegex.test(email)) {
+    if (!email || !emailRegex.test(email)) {
       setError(true);
     } else {
       setError(false);
