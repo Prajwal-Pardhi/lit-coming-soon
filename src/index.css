@@ -76,7 +76,7 @@ body {
   font-size: 15px;
   color: #FCF3DD;
   letter-spacing: 5px;
-    margin-top: 17px;
+  margin-top: 5vh;
 }
 .coming-soon-img{
   width: 40vw; /* Adjust to your desired width */
@@ -165,7 +165,7 @@ body {
   }
   .options-container{
     display: flex;
-    margin-top: 15vh;
+    margin-top: 13vh;
     /* flex-direction: column; */
   }
   .coming-soon-img{
@@ -179,10 +179,14 @@ body {
   .subscribe-content{
     width: 90vw;
     margin-left: 5vw;
-    margin-bottom: 22vh;
+    margin-top: 2vh;
+    margin-bottom: 20vh;
   }
   .subscribe-title{
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: bold;
+  }.subscribe-btn{
+    padding: 8px 16px 8px 16px;
   }
   .logo-img img{
     width: 55vw;
@@ -198,7 +202,7 @@ body {
     /* margin-bottom: 40%; */
   }
   .top-content-container{
-    margin-top: 33vh;
+    margin-top: 30vh;
   }
 }
 @media (max-height: 600px) {
