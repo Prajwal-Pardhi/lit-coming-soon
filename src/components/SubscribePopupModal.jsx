@@ -54,7 +54,7 @@ export const Modal = ({ openSubscribeModal, setOpenSubscribeModal }) => {
                 <img src="/signup_modal_img.jpg" alt="img" effect={blur}/>
               </div>
               <div className="right-form-container">
-                <p className="right-form-title">Subscribe to our newsletter</p>
+                <p className="right-form-title">SUBSCRIBE TO OUR NEWSLETTER</p>
                 <div>
                   <div className="modal-text">
                     <p>Missing out on the latest fashion trends?!
