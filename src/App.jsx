@@ -4,13 +4,12 @@ import videoBg from "./assets/bg_vid_web_with_light.mp4";
 import videoBgMobile from "./assets/bg_vid_mobile_compressed_2.mp4";
 import SubscribePopupModal from "./components/SubscribePopupModal";
 import comingSoonGIF from "./assets/coming_soon_gif_without_bg.gif";
-import lightDecoGIF from "./assets/light_deco_gif.gif";
 
 function App() {
   const [openSubscribeModal, setOpenSubscribeModal] = useState(false);
   return (
     <>
-    <div className="main-container">
+      <div className="main-container">
         <video
           className="bg-video"
           src={videoBg}
@@ -33,7 +32,9 @@ function App() {
         <div className="content">
           <div className="coming-soon-img-title">
             <div className="top-content-container">
-              <div className="company-title marcellus-regular">LUXURY IN TASTE</div>
+              <div className="company-title marcellus-regular">
+                LUXURY IN TASTE
+              </div>
               <div className="coming-soon-img">
                 <img src={comingSoonGIF} alt="coming soon" effect={blur} />
               </div>
