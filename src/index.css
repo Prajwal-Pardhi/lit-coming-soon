@@ -132,7 +132,7 @@
   align-items: center;
   margin-top: 10px;
   color: #FCF3DD;
-  font-size: 8px;
+  font-size: 9px;
   /* line-height: 5.1em; */
   text-wrap: nowrap;
   /* margin-bottom: 60%; */
@@ -163,7 +163,7 @@
   .subscribe-content{
     width: 90vw;
     margin-left: 5vw;
-    margin-bottom: 24vh;
+    margin-bottom: 22vh;
   }
   .subscribe-title{
     font-size: 30px;
