@@ -5,21 +5,33 @@
 }
 :root{
   --background-color:#FCF3DD;
+  color: #FCF2DD;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #FCF3DD; /* Dark mode background color */
+    color: #FCF2DD;
   }
+}
+body {
+  background-color: #FCF2DD;
+  color: #FCF2DD;
+  font-family: "Open Sans", sans-serif;
 }
 
 .main-container{
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
+  top: 0;
 }
 .bg-video{
+  flex-grow: 1;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  top: 0;
 }
 .bg-video-mobile{
   display: none;
@@ -69,6 +81,7 @@
   height: 25vh; /* Adjust to your desired height */
   overflow: hidden; /* Hide overflow content */
   position: relative;
+  display: none;
 }
 .coming-soon-img img{
   position: absolute;

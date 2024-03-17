@@ -46,12 +46,13 @@ export const Modal = ({ openSubscribeModal, setOpenSubscribeModal }) => {
                 <p className="right-form-title">Subscribe to our newsletter</p>
                 <div>
                   <div className="modal-text">
-                    An email will be sent to you every week. The email contains
-                    new information and benefits of using our platform.
+                    <p>Missing out on the latest fashion trends?!</p>
+                    <p>Subscribe to out weekly newsletter to receive concise weekly updates on Fast Fashion, Luxury Fashion, Sustainable Fashion, and the Sneaker Market.</p>
+                    <p>Subscribe now to stay stylishlyahead!</p>
                   </div>
                 </div>
                 <div>
-                  {/* <div className="modal-input-label">
+                  <div className="modal-input-label">
                     <label className="modal--input-text">Email address</label>
                     <input
                       placeholder="Email"
@@ -66,8 +67,8 @@ export const Modal = ({ openSubscribeModal, setOpenSubscribeModal }) => {
                         Please enter a valid email.
                       </div>
                     )}
-                  </div> */}
-                  <div className="modal-input-label">
+                  </div>
+                  {/* <div className="modal-input-label">
                     <label className="modal--input-text">Name</label>
                     <input
                       placeholder="Name"
@@ -104,7 +105,7 @@ export const Modal = ({ openSubscribeModal, setOpenSubscribeModal }) => {
                     <div className="error-message">
                       Please enter valid information.
                     </div>
-                  )}
+                  )} */}
                   <div className="modal-buttons-container">
                     <button
                       className="modal-footer-button modal-button-send"

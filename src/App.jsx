@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import videoBg from "./assets/coming_soon_compressed_2.mp4";
+import videoBg from "./assets/bg_vid_web_with_light.mp4";
 import videoBgMobile from "./assets/bg_vid_mobile_compressed.mp4";
 import SubscribePopupModal from "./components/SubscribePopupModal";
 import comingSoonGIF from "./assets/coming_soon_gif_without_bg.gif";
