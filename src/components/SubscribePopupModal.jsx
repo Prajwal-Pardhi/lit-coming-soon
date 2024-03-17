@@ -47,8 +47,8 @@ export const Modal = ({ openSubscribeModal, setOpenSubscribeModal }) => {
                 <div>
                   <div className="modal-text">
                     <p>Missing out on the latest fashion trends?!</p>
-                    <p>Subscribe to out weekly newsletter to receive concise weekly updates on Fast Fashion, Luxury Fashion, Sustainable Fashion, and the Sneaker Market.</p>
-                    <p>Subscribe now to stay stylishlyahead!</p>
+                    <p>Subscribe to our weekly newsletter to receive concise weekly updates on Fast Fashion, Luxury Fashion, Sustainable Fashion, and the Sneaker Market.</p>
+                    <p>Subscribe now to stay stylishly ahead!</p>
                   </div>
                 </div>
                 <div>
