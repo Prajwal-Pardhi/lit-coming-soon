@@ -9,6 +9,7 @@ export const Modal = ({ openSubscribeModal, setOpenSubscribeModal }) => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState(false);
 
+  // Send the email- backend ------------------------------------------------
   const subscribeLetter = async () => {
     const response = await fetch("http://localhost:5000/api/subscribe", {
       method: "POST",
@@ -27,8 +28,8 @@ export const Modal = ({ openSubscribeModal, setOpenSubscribeModal }) => {
       setError(true);
     } else {
       setError(false);
-      subscribeLetter();
       // Send the email- backend ------------------------------------------------
+      // subscribeLetter(); // uncomment this line to send the email - also update the backend url
       setEmailSend(true);
       setTimeout(() => {
         setOpenSubscribeModal(false);
