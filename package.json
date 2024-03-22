@@ -2,6 +2,9 @@
   "name": "lit-coming-soon",
   "private": true,
   "version": "0.0.0",
+  "engines": {
+    "node": ">=18.2.0"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
