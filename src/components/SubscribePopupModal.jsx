@@ -11,15 +11,18 @@ export const Modal = ({ openSubscribeModal, setOpenSubscribeModal }) => {
 
   // Send the email- backend ------------------------------------------------
   const subscribeLetter = async () => {
-    const response = await fetch("http://localhost:5000/api/subscribe", {
+    console.log('res sent');
+    const response = await fetch("https://backend-practice.azurewebsites.net/api/subscriber/subscribe", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ email }),
+      body: JSON.stringify({ email : email }),
+    }).then(response => response.json())
+    .then(data => console.log(data))
+    .catch((error) => {
+      console.error('Error:', error);
     });
-    const data = await response.json();
-    console.log(data);
   };
 
   const sendEmail = () => {
@@ -29,11 +32,11 @@ export const Modal = ({ openSubscribeModal, setOpenSubscribeModal }) => {
     } else {
       setError(false);
       // Send the email- backend ------------------------------------------------
-      // subscribeLetter(); // uncomment this line to send the email - also update the backend url
+      subscribeLetter(); // uncomment this line to send the email - also update the backend url
       setEmailSend(true);
       setTimeout(() => {
         setOpenSubscribeModal(false);
-      }, 1000);
+      }, 10000);
     }
   };
 
